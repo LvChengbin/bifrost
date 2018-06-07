@@ -5,6 +5,7 @@ const Liftoff = require( 'liftoff' );
 const v8flags = require( 'v8flags' );
 const console = require( './lib/shared/console' );
 const modules = require( './lib/modules' );
+const init = require( './lib/init' );
 
 /**
  * to get the cli options.
@@ -54,6 +55,7 @@ module.exports = () => {
         cwd : options.cwd,
         configPath : options.config
     }, env => {
+        init();
         // bifrost send file.txt s95:~/ 
         // bifrost get s95:~/file.txt ~/path
         //console.debug( 'env', env );
