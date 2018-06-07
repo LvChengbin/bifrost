@@ -1,0 +1,30 @@
+{
+	"name": "@lvchengbin/bifrost",
+	"description": "",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/LvChengbin/bifrost.git"
+	},
+	"version": "0.0.0",
+	"keywords": [
+		"bifrost"
+	],
+	"devDependencies": {
+		"eslint": "^4.19.1",
+		"jasmine": "^3.1.0",
+		"nodemon": "^1.17.5",
+		"pre-commit": "^1.2.2",
+		"supertest": "^3.1.0"
+	},
+	"author": "LvChengbin <lvchengbin59@gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"@lvchengbin/yolk": "0.0.24"
+	},
+	"scripts": {
+		"server": "nodemon --exec node lib/server/index.js",
+		"test": "jasmine --config=test/jasmine.json",
+		"lint": "eslint ./ --cache --ignore-path .eslintignore",
+		"precommit-msg": "echo 'Pre-commit checks...' && exit 0"
+	}
+}
