@@ -19,9 +19,23 @@
 	"author": "LvChengbin <lvchengbin59@gmail.com>",
 	"license": "MIT",
 	"dependencies": {
-		"@lvchengbin/yolk": "0.0.24"
+		"@lvchengbin/is": "0.0.13",
+		"@lvchengbin/sleep": "0.0.1",
+		"@lvchengbin/yolk": "0.0.24",
+		"ansi": "^0.3.1",
+		"chalk": "^2.4.1",
+		"configstore": "^3.1.2",
+		"liftoff": "^2.5.0",
+		"ora": "^2.1.0",
+		"ps-node": "^0.1.6",
+		"request": "^2.87.0",
+		"request-promise-native": "^1.0.5",
+		"tar": "^4.4.4",
+		"v8flags": "^3.1.1",
+		"yargs": "^11.0.0"
 	},
 	"scripts": {
+        "bifrost" : "node bin/bifrost.js",
 		"server": "nodemon --exec node lib/server/index.js",
 		"test": "jasmine --config=test/jasmine.json",
 		"lint": "eslint ./ --cache --ignore-path .eslintignore",
