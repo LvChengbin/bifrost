@@ -19,6 +19,7 @@
 	"author": "LvChengbin <lvchengbin59@gmail.com>",
 	"license": "MIT",
 	"dependencies": {
+		"@lvchengbin/config": "0.0.0",
 		"@lvchengbin/is": "0.0.13",
 		"@lvchengbin/sleep": "0.0.1",
 		"@lvchengbin/yolk": "0.0.24",
