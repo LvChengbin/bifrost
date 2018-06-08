@@ -38,7 +38,7 @@
 	},
 	"scripts": {
 		"bifrost": "node bin/bifrost.js",
-		"server": "nodemon --exec node lib/server/index.js",
+		"server": "nodemon --exec node lib/modules/server/app/index.js -- --port=3100",
 		"test": "jasmine --config=test/jasmine.json",
 		"lint": "eslint ./ --cache --ignore-path .eslintignore",
 		"precommit-msg": "echo 'Pre-commit checks...' && exit 0"
