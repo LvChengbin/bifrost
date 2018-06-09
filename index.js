@@ -22,16 +22,8 @@ const cli = new Liftoff( {
             home : {
                 path : '~',
                 extensions : {
-                    '.js' : null,
-                    '.json' : null
+                    '.js' : null
                 },
-            },
-            cwd : {
-                path : '.',
-                extensions : {
-                    '.js' : null,
-                    '.json' : null
-                }
             }
         }
     },
@@ -58,7 +50,7 @@ module.exports = () => {
     }, env => {
         init();
         const configFiles = env.configFiles[ '.bifrost' ];
-        const configFile = env.configPath || configFiles.cwd || configFiles.home || null;
+        const configFile = env.configPath || configFiles.home || null;
         let config = {};
 
         if( configFile ) {
@@ -67,6 +59,7 @@ module.exports = () => {
                 config = config();
             }
         }
+        options.config = configFile;
         modules( options, new Config( config ) );
     } );
 };

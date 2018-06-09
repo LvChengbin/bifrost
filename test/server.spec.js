@@ -1,5 +1,7 @@
 describe( 'bifrost server', () => {
-    it( 'cli', done => {
-        done();
-    } ); 
+    describe( 'cli', () => {
+        it( 'start', done => {
+            done(); 
+        } );
+    } );
 } );

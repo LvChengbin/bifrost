@@ -1,13 +1,24 @@
 {
 	"name": "@lvchengbin/bifrost",
-	"description": "",
+	"description": "a library used to transfer files between remote server and local system based on http.",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/LvChengbin/bifrost.git"
 	},
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"keywords": [
-		"bifrost"
+		"bifrost",
+		"files",
+		"transfer"
+	],
+	"main": "index.js",
+	"bin": {
+		"bifrost": "bin/bifrost.js"
+	},
+	"files": [
+		"index.js",
+		"bin",
+		"lib"
 	],
 	"devDependencies": {
 		"eslint": "^4.19.1",
