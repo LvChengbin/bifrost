@@ -21,7 +21,7 @@
 		"lib"
 	],
 	"devDependencies": {
-		"eslint": "^4.19.1",
+		"eslint": "^5.8.0",
 		"jasmine": "^3.1.0",
 		"nodemon": "^1.17.5",
 		"pre-commit": "^1.2.2",
@@ -30,23 +30,23 @@
 	"author": "LvChengbin <lvchengbin59@gmail.com>",
 	"license": "MIT",
 	"dependencies": {
-		"@lvchengbin/config": "0.0.0",
-		"@lvchengbin/is": "0.0.13",
-		"@lvchengbin/sleep": "0.0.1",
-		"@lvchengbin/yolk": "0.0.24",
+		"@lvchengbin/config": "0.0.2",
+		"@lvchengbin/is": "0.0.24",
+		"@lvchengbin/sleep": "0.0.2",
+		"@lvchengbin/yolk": "0.1.8",
 		"ansi": "^0.3.1",
 		"chalk": "^2.4.1",
-		"configstore": "^3.1.2",
+		"configstore": "^4.0.0",
 		"liftoff": "^2.5.0",
 		"md5-file": "^4.0.0",
-		"ora": "^2.1.0",
+		"ora": "^3.0.0",
 		"ps-node": "^0.1.6",
 		"request": "^2.87.0",
 		"request-promise-native": "^1.0.5",
 		"tar": "^4.4.4",
 		"uniqid": "^5.0.2",
 		"v8flags": "^3.1.1",
-		"yargs": "^11.0.0"
+		"yargs": "^12.0.2"
 	},
 	"scripts": {
 		"bifrost": "node bin/bifrost.js",
