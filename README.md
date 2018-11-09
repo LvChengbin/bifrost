@@ -1,5 +1,7 @@
 # Bifrost
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/LvChengbin/bifrost.svg)](https://greenkeeper.io/)
+
 Providing a http server and client that used to transfer files between remote server and local system.
 
 
